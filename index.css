@@ -6,19 +6,20 @@ body {
     justify-content: center;
     align-items: center;
     background: linear-gradient(135deg, #e266da, #563577);
+    padding: 10px;
   }
   
   /* Container & Card */
   .container {
     width: 100%;
-    max-width: 500px;
-    padding: 20px;
+    max-width: 650px; /* Increased for desktop */
+    padding: 40px;
   }
   
   .card {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
-    padding: 30px;
+    padding: 40px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.3);
     text-align: center;
   }
@@ -27,12 +28,13 @@ body {
   h1 {
     margin-bottom: 20px;
     color: #333;
+    font-size: 26px;
   }
   
   /* Button Styles */
   button {
-    padding: 15px 30px;
-    font-size: 18px;
+    padding: 20px 40px; /* Increased button size */
+    font-size: 22px;
     border: none;
     background-color: #250725;
     color: #fff;
@@ -63,7 +65,7 @@ body {
     width: 120px;
     height: 120px;
     transition: transform 0.5s ease-in-out;
-    will-change: transform; /* Helps with animation performance */
+    will-change: transform;
     transform: rotate(0deg) scale(1);
   }
   
@@ -88,3 +90,32 @@ body {
     margin-top: 15px;
   }
   
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .container {
+      max-width: 90%;
+      padding: 20px;
+    }
+    
+    .card {
+      padding: 25px;
+    }
+    
+    h1 {
+      font-size: 22px;
+    }
+    
+    button {
+      padding: 16px 32px; /* Slightly increased button size for mobile */
+      font-size: 18px;
+    }
+    
+    .dice-container img {
+      width: 100px;
+      height: 100px;
+    }
+    
+    p {
+      font-size: 18px;
+    }
+  }
