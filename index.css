@@ -84,7 +84,7 @@ button:active {
     }
 }
 
-/* DICE ELEMENTS */
+/* DICE IMAGE & ANIMATION */
 .dice-container {
     text-align: center;
     margin: 30px 0;
@@ -94,6 +94,24 @@ button:active {
     width: 150px;
     height: 150px;
     transition: transform 0.5s ease;
+    /* Ensure the image is visible and centered */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Dice Roll Animation */
+@keyframes roll {
+    0% { transform: rotate(0deg) scale(1); }
+    25% { transform: rotate(90deg) scale(1.2); }
+    50% { transform: rotate(180deg) scale(0.9); }
+    75% { transform: rotate(270deg) scale(1.1); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+
+.rolling {
+    animation: roll 1s ease-out;
+    /* Ensure the animation plays smoothly */
+    animation-fill-mode: forwards;
 }
 
 /* MOBILE ADJUSTMENTS */
@@ -106,17 +124,4 @@ button:active {
     .dice-container {
         margin: 20px 0;
     }
-}
-
-/* ANIMATIONS */
-@keyframes roll {
-    0% { transform: rotate(0deg) scale(1); }
-    25% { transform: rotate(90deg) scale(1.2); }
-    50% { transform: rotate(180deg) scale(0.9); }
-    75% { transform: rotate(270deg) scale(1.1); }
-    100% { transform: rotate(360deg) scale(1); }
-}
-
-.rolling {
-    animation: roll 1s ease-out;
 }
