@@ -7,108 +7,80 @@ body {
     align-items: center;
     background: linear-gradient(135deg, #e266da, #563577);
     padding: 10px;
-  }
-  
-  /* Container & Card */
-  .container {
-    width: 100%;
-    max-width: 500px;
-    padding: 20px;
-  }
-  
-  .card {
+}
+
+/* Container & Card */
+.container {
+    width: 90%; /* Changed from 100% */
+    max-width: 400px; /* Reduced from 500px */
+}
+
+.card {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
-    padding: 30px;
+    padding: 2rem; /* Changed to relative units */
     box-shadow: 0 8px 16px rgba(0,0,0,0.3);
     text-align: center;
-  }
-  
-  /* Heading */
-  h1 {
-    margin-bottom: 20px;
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 1.5rem;
     color: #333;
-    font-size: 24px;
-  }
-  
-  /* Button Styles */
-  button {
-    padding: 12px 25px;
-    font-size: 16px;
+    font-size: 1.75rem; /* Increased base size */
+}
+
+/* Button Styles */
+button {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
     border: none;
     background-color: #250725;
     color: #fff;
     border-radius: 50px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-    outline: none;
-  }
-  
-  button:hover {
-    background-color: #8e6ea2;
-    transform: scale(1.05);
-  }
-  
-  button:active {
-    transform: scale(0.95);
-  }
-  
-  /* Dice Container */
-  .dice-container {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .dice-container img {
-    width: 100px;
-    height: 100px;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  /* Dice Roll Animation */
-  @keyframes rollAnimation {
-    0%   { transform: rotate(0deg) scale(1); }
-    25%  { transform: rotate(90deg) scale(1.1); }
-    50%  { transform: rotate(180deg) scale(0.9); }
-    75%  { transform: rotate(270deg) scale(1.05); }
-    100% { transform: rotate(360deg) scale(1); }
-  }
-  
-  .dice-roll {
-    animation: rollAnimation 1s ease-in-out;
-  }
-  
-  /* Dice Number Text */
-  p {
-    font-size: 20px;
-    font-weight: bold;
-    color: #333;
-    margin-top: 10px;
-  }
+    transition: all 0.3s ease;
+}
 
-  /* Responsive Design */
-  @media (max-width: 480px) {
+/* Dice Container */
+.dice-container img {
+    width: 120px; /* Increased size */
+    height: 120px;
+}
+
+/* Dice Number Text */
+p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Enhanced Mobile Styles */
+@media (max-width: 600px) { /* Changed breakpoint */
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
     .card {
-      padding: 20px;
+        padding: 1.5rem;
     }
-    
+
     h1 {
-      font-size: 20px;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
     }
-    
+
     button {
-      padding: 10px 20px;
-      font-size: 14px;
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
     }
-    
+
     .dice-container img {
-      width: 80px;
-      height: 80px;
+        width: 100px;
+        height: 100px;
     }
-    
+
     p {
-      font-size: 18px;
+        font-size: 1.2rem;
     }
-  }
+}
