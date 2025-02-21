@@ -93,10 +93,10 @@ button:active {
 .dice-container img {
     width: 150px;
     height: 150px;
-    transition: transform 0.5s ease;
-    /* Ensure the image is visible and centered */
     display: block;
     margin: 0 auto;
+    /* Remove transition if it conflicts with animation */
+    transition: none; /* Disable transition during animation */
 }
 
 /* Dice Roll Animation */
