@@ -15,26 +15,26 @@ body {
     padding: 20px;
 }
 
-/* DESKTOP CONTAINER */
+/* CONTAINER & CARD */
 .container {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.card {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 25px;
     padding: 40px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-    transition: all 0.3s ease;
+    text-align: center;
 }
 
 /* MOBILE LAYOUT */
 @media (max-width: 600px) {
-    .container {
-        width: 100%;
-        min-height: 80vh;
+    .card {
         padding: 30px 20px;
         border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
     }
 }
 
@@ -70,6 +70,20 @@ button:active {
     transform: scale(0.95);
 }
 
+/* MOBILE ADJUSTMENTS */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    button {
+        padding: 20px 50px; /* Larger mobile padding */
+        font-size: 1.6rem; /* Larger mobile text */
+        min-height: 65px;
+    }
+}
+
 /* DICE ELEMENTS */
 .dice-container {
     text-align: center;
@@ -84,17 +98,6 @@ button:active {
 
 /* MOBILE ADJUSTMENTS */
 @media (max-width: 600px) {
-    h1 {
-        font-size: 2rem;
-        margin-bottom: 20px;
-    }
-
-    button {
-        padding: 20px 50px; /* Larger mobile padding */
-        font-size: 1.6rem; /* Larger mobile text */
-        min-height: 65px;
-    }
-
     .dice-container img {
         width: 120px;
         height: 120px;
