@@ -15,7 +15,7 @@ body {
     padding: 20px;
 }
 
-/* DESKTOP CONTAINER (DEFAULT) */
+/* DESKTOP CONTAINER */
 .container {
     width: 500px;
     background: rgba(255, 255, 255, 0.9);
@@ -46,18 +46,24 @@ h1 {
     text-align: center;
 }
 
-/* BUTTON STYLES - UPDATED */
+/* BUTTON - LARGER VERSION */
 button {
-    padding: 18px 45px; /* Increased padding */
-    font-size: 1.3rem;  /* Larger text */
+    padding: 20px 50px;
+    font-size: 1.5rem;
     background: #250725;
     color: white;
     border: none;
     border-radius: 50px;
     cursor: pointer;
     width: 100%;
-    margin-top: 25px;   /* More spacing above */
-    transition: transform 0.2s ease;
+    margin-top: 30px;
+    transition: all 0.2s ease;
+    min-height: 60px;
+}
+
+button:hover {
+    background: #3a0a3a;
+    transform: scale(1.02);
 }
 
 button:active {
@@ -76,7 +82,7 @@ button:active {
     transition: transform 0.5s ease;
 }
 
-/* MOBILE SPECIFIC ADJUSTMENTS - UPDATED */
+/* MOBILE ADJUSTMENTS */
 @media (max-width: 600px) {
     h1 {
         font-size: 2rem;
@@ -84,8 +90,9 @@ button:active {
     }
 
     button {
-        padding: 15px 35px; /* Larger mobile padding */
-        font-size: 1.2rem; /* Larger mobile text */
+        padding: 18px 40px;
+        font-size: 1.4rem;
+        min-height: 55px;
     }
 
     .dice-container img {
@@ -98,7 +105,7 @@ button:active {
     }
 }
 
-/* DICE ROLL ANIMATION */
+/* ANIMATIONS */
 @keyframes roll {
     0% { transform: rotate(0deg) scale(1); }
     25% { transform: rotate(90deg) scale(1.2); }
