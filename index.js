@@ -6,18 +6,20 @@ function rollDice() {
     // Disable button to prevent rapid clicks during the roll
     rollButton.disabled = true;
 
-    // Optional: Play dice roll sound (ensure dice-sound.mp3 is in your directory)
-    const diceSound = new Audio("dice-sound.mp3");
-    diceSound.play();
-
     // Remove existing animation class before re-adding it
     diceImage.classList.remove("dice-roll");
 
-    // Force reflow (triggers a DOM recalculation)
+    // Force reflow (ensures animation restarts properly)
     void diceImage.offsetWidth;
 
-    // Add animation class to dice image
-    diceImage.classList.add("dice-roll");
+    // Use setTimeout to ensure proper re-triggering
+    setTimeout(() => {
+        diceImage.classList.add("dice-roll");
+    }, 10); // Small delay ensures animation applies
+
+    // Play dice roll sound
+    const diceSound = new Audio("dice-sound.mp3");
+    diceSound.play();
 
     // Wait for animation to finish before updating the dice
     setTimeout(() => {
