@@ -12,29 +12,29 @@ body {
 /* Container & Card */
 .container {
     width: 100%;
-    max-width: 400px; /* Larger container */
+    max-width: 500px; /* Increased max-width */
     padding: 20px;
 }
 
 .card {
     background: rgba(255, 255, 255, 0.95);
     border-radius: 15px;
-    padding: 40px; /* Increased padding */
+    padding: 50px; /* More padding for bigger appearance */
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
     text-align: center;
 }
 
 /* Heading */
 h1 {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     color: #333;
-    font-size: 26px; /* Larger font */
+    font-size: 28px; /* Bigger font for better readability */
 }
 
 /* Button Styles */
 button {
-    padding: 18px 35px; /* Bigger button */
-    font-size: 20px; /* Larger font */
+    padding: 20px 40px; /* Larger button */
+    font-size: 22px; /* Bigger text */
     border: none;
     background-color: #250725;
     color: #fff;
@@ -55,15 +55,15 @@ button:active {
 
 /* Dice Container */
 .dice-container {
-    margin-top: 30px;
+    margin-top: 35px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .dice-container img {
-    width: 150px; /* Bigger dice image */
-    height: 150px;
+    width: 180px; /* Bigger dice */
+    height: 180px;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -82,37 +82,38 @@ button:active {
 
 /* Dice Number Text */
 p {
-    font-size: 24px; /* Bigger font */
+    font-size: 26px; /* Bigger text */
     font-weight: bold;
     color: #333;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 /* Responsive Styles for Mobile */
 @media (max-width: 600px) {
     .container {
-        max-width: 90%; /* More width */
+        max-width: 100%; /* Use full width */
+        padding: 30px;
     }
 
     .card {
-        padding: 35px; /* Increased padding */
+        padding: 40px; /* More padding */
     }
 
     h1 {
-        font-size: 24px; /* Bigger text */
+        font-size: 26px;
     }
 
     button {
-        padding: 15px 30px; /* Bigger button */
-        font-size: 18px; /* Easier to read */
+        padding: 18px 35px;
+        font-size: 20px;
     }
 
     .dice-container img {
-        width: 130px; /* Slightly larger dice */
-        height: 130px;
+        width: 160px; /* Increase dice size for mobile */
+        height: 160px;
     }
 
     p {
-        font-size: 22px;
+        font-size: 24px;
     }
 }
