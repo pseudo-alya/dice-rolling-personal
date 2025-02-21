@@ -6,35 +6,35 @@ body {
     justify-content: center;
     align-items: center;
     background: linear-gradient(135deg, #e266da, #563577);
-    padding: 20px;
-}
-
-/* Container & Card */
-.container {
+    padding: 10px;
+  }
+  
+  /* Container & Card */
+  .container {
     width: 100%;
-    max-width: 500px; /* Increased max-width */
+    max-width: 500px;
     padding: 20px;
-}
-
-.card {
-    background: rgba(255, 255, 255, 0.95);
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
-    padding: 50px; /* More padding for bigger appearance */
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
     text-align: center;
-}
-
-/* Heading */
-h1 {
-    margin-bottom: 30px;
+  }
+  
+  /* Heading */
+  h1 {
+    margin-bottom: 20px;
     color: #333;
-    font-size: 28px; /* Bigger font for better readability */
-}
-
-/* Button Styles */
-button {
-    padding: 20px 40px; /* Larger button */
-    font-size: 22px; /* Bigger text */
+    font-size: 24px;
+  }
+  
+  /* Button Styles */
+  button {
+    padding: 12px 25px;
+    font-size: 16px;
     border: none;
     background-color: #250725;
     color: #fff;
@@ -42,78 +42,73 @@ button {
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
     outline: none;
-}
-
-button:hover {
+  }
+  
+  button:hover {
     background-color: #8e6ea2;
     transform: scale(1.05);
-}
-
-button:active {
+  }
+  
+  button:active {
     transform: scale(0.95);
-}
-
-/* Dice Container */
-.dice-container {
-    margin-top: 35px;
+  }
+  
+  /* Dice Container */
+  .dice-container {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.dice-container img {
-    width: 180px; /* Bigger dice */
-    height: 180px;
+  }
+  
+  .dice-container img {
+    width: 100px;
+    height: 100px;
     transition: transform 0.5s ease-in-out;
-}
-
-/* Dice Roll Animation */
-@keyframes rollAnimation {
+  }
+  
+  /* Dice Roll Animation */
+  @keyframes rollAnimation {
     0%   { transform: rotate(0deg) scale(1); }
     25%  { transform: rotate(90deg) scale(1.1); }
     50%  { transform: rotate(180deg) scale(0.9); }
     75%  { transform: rotate(270deg) scale(1.05); }
     100% { transform: rotate(360deg) scale(1); }
-}
-
-.dice-roll {
+  }
+  
+  .dice-roll {
     animation: rollAnimation 1s ease-in-out;
-}
-
-/* Dice Number Text */
-p {
-    font-size: 26px; /* Bigger text */
+  }
+  
+  /* Dice Number Text */
+  p {
+    font-size: 20px;
     font-weight: bold;
     color: #333;
-    margin-top: 20px;
-}
+    margin-top: 10px;
+  }
 
-/* Responsive Styles for Mobile */
-@media (max-width: 600px) {
-    .container {
-        max-width: 100%; /* Use full width */
-        padding: 30px;
-    }
-
+  /* Responsive Design */
+  @media (max-width: 480px) {
     .card {
-        padding: 40px; /* More padding */
+      padding: 20px;
     }
-
+    
     h1 {
-        font-size: 26px;
+      font-size: 20px;
     }
-
+    
     button {
-        padding: 18px 35px;
-        font-size: 20px;
+      padding: 10px 20px;
+      font-size: 14px;
     }
-
+    
     .dice-container img {
-        width: 160px; /* Increase dice size for mobile */
-        height: 160px;
+      width: 80px;
+      height: 80px;
     }
-
+    
     p {
-        font-size: 24px;
+      font-size: 18px;
     }
-}
+  }
