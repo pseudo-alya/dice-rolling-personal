@@ -10,9 +10,9 @@ function rollDice() {
     const diceSound = new Audio("dice-sound.mp3");
     diceSound.play();
 
-    // Add animation class to dice image
-    diceImage.classList.remove("rolling"); // Reset animation
-    void diceImage.offsetWidth; // Trigger reflow to restart animation
+    // Reset animation by removing and re-adding the class
+    diceImage.classList.remove("rolling");
+    void diceImage.offsetWidth; // Force reflow to restart animation
     diceImage.classList.add("rolling");
 
     // Wait for animation to finish before updating the dice
