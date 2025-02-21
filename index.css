@@ -28,13 +28,13 @@ body {
   h1 {
     margin-bottom: 25px;
     color: #333;
-    font-size: 36px; /* Increased font size */
+    font-size: 48px; /* Increased font size */
   }
   
   /* Button Styles */
   button {
-    padding: 30px 60px; /* Further increased button size */
-    font-size: 28px;
+    padding: 35px 70px; /* Further increased button size */
+    font-size: 30px;
     border: none;
     background-color: #250725;
     color: #fff;
@@ -84,7 +84,7 @@ body {
   
   /* Dice Number Text */
   p {
-    font-size: 28px; /* Increased font size */
+    font-size: 32px; /* Increased font size */
     font-weight: bold;
     color: #333;
     margin-top: 20px;
@@ -102,12 +102,12 @@ body {
     }
     
     h1 {
-      font-size: 30px;
+      font-size: 36px; /* Increased for mobile */
     }
     
     button {
-      padding: 22px 44px; /* Slightly increased button size for mobile */
-      font-size: 24px;
+      padding: 26px 52px; /* Slightly increased button size for mobile */
+      font-size: 26px;
     }
     
     .dice-container img {
@@ -116,6 +116,6 @@ body {
     }
     
     p {
-      font-size: 24px;
+      font-size: 26px;
     }
   }
