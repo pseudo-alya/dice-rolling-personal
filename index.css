@@ -48,8 +48,8 @@ h1 {
 
 /* BUTTON - LARGER VERSION */
 button {
-    padding: 20px 50px;
-    font-size: 1.5rem;
+    padding: 25px 60px; /* Very large padding */
+    font-size: 1.8rem; /* Very large text */
     background: #250725;
     color: white;
     border: none;
@@ -58,7 +58,7 @@ button {
     width: 100%;
     margin-top: 30px;
     transition: all 0.2s ease;
-    min-height: 60px;
+    min-height: 70px; /* Ensures minimum size */
 }
 
 button:hover {
@@ -90,9 +90,9 @@ button:active {
     }
 
     button {
-        padding: 18px 40px;
-        font-size: 1.4rem;
-        min-height: 55px;
+        padding: 20px 50px; /* Larger mobile padding */
+        font-size: 1.6rem; /* Larger mobile text */
+        min-height: 65px;
     }
 
     .dice-container img {
