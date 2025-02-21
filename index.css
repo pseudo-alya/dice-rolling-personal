@@ -15,11 +15,11 @@ body {
     padding: 20px;
 }
 
-/* CONTAINER & CARD */
+/* CONTAINER - LARGER SIZE */
 .container {
     width: 100%;
-    max-width: 500px;
-    padding: 20px;
+    max-width: 600px; /* Increased from 500px */
+    padding: 30px; /* Increased padding */
 }
 
 .card {
@@ -32,6 +32,10 @@ body {
 
 /* MOBILE LAYOUT */
 @media (max-width: 600px) {
+    .container {
+        padding: 20px; /* Adjusted for mobile */
+    }
+
     .card {
         padding: 30px 20px;
         border-radius: 20px;
@@ -46,10 +50,10 @@ h1 {
     text-align: center;
 }
 
-/* BUTTON - LARGER VERSION */
+/* BUTTON - LARGER SIZE */
 button {
-    padding: 25px 60px; /* Very large padding */
-    font-size: 1.8rem; /* Very large text */
+    padding: 25px 60px; /* Increased padding */
+    font-size: 1.8rem; /* Larger text */
     background: #250725;
     color: white;
     border: none;
@@ -93,10 +97,9 @@ button:active {
 .dice-container img {
     width: 150px;
     height: 150px;
+    transition: transform 0.5s ease;
     display: block;
     margin: 0 auto;
-    /* Remove transition if it conflicts with animation */
-    transition: none; /* Disable transition during animation */
 }
 
 /* Dice Roll Animation */
@@ -110,7 +113,6 @@ button:active {
 
 .rolling {
     animation: roll 1s ease-out;
-    /* Ensure the animation plays smoothly */
     animation-fill-mode: forwards;
 }
 
